@@ -1,394 +1,144 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سياسة الخصوصية — SFF Dashboard</title>
+  <title>Privacy Policy — SFF Factory Management System</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
-      background: #f4f6f9;
-      color: #1a1a2e;
-      line-height: 1.8;
-    }
-    header {
-      background: linear-gradient(135deg, #16a34a, #15803d);
-      color: white;
-      padding: 40px 24px;
-      text-align: center;
-    }
-    header h1 { font-size: 2rem; margin-bottom: 8px; }
-    header p  { font-size: 1rem; opacity: 0.85; }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px 60px;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 32px;
-      margin-bottom: 24px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    }
-    h2 {
-      color: #16a34a;
-      font-size: 1.2rem;
-      margin-bottom: 14px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #dcfce7;
-    }
-    p { margin-bottom: 12px; color: #374151; }
-    ul { padding-right: 20px; margin-bottom: 12px; }
-    ul li { margin-bottom: 8px; color: #374151; }
-    ul li::marker { color: #16a34a; }
-    .badge {
-      display: inline-block;
-      background: #dcfce7;
-      color: #15803d;
-      padding: 3px 10px;
-      border-radius: 20px;
-      font-size: 0.82rem;
-      margin: 3px 2px;
-      font-weight: 600;
-    }
-    .lang-switch {
-      text-align: center;
-      margin-bottom: 24px;
-    }
-    .lang-switch a {
-      display: inline-block;
-      margin: 0 6px;
-      padding: 8px 20px;
-      border-radius: 8px;
-      background: #16a34a;
-      color: white;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    .lang-switch a:hover { background: #15803d; }
-    .en-section { display: none; }
-    .updated {
-      font-size: 0.82rem;
-      color: #9ca3af;
-      text-align: center;
-      margin-top: 16px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.82rem;
-      color: #9ca3af;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.4rem; }
-      .card { padding: 20px; }
-    }
+    :root{--primary:#1a237e;--accent:#3949ab;--light:#e8eaf6;--text:#212121;--muted:#616161}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Segoe UI",Arial,sans-serif;background:#f5f5f5;color:var(--text);line-height:1.7}
+    header{background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;padding:48px 24px 36px;text-align:center}
+    header h1{font-size:1.9rem;font-weight:700;margin-bottom:6px}
+    header p{font-size:.95rem;opacity:.85}
+    .lang-switch{display:flex;justify-content:center;gap:12px;padding:16px;background:var(--light);border-bottom:2px solid var(--accent)}
+    .lang-switch button{padding:8px 28px;border:2px solid var(--accent);border-radius:20px;cursor:pointer;font-size:.9rem;font-weight:600;transition:all .2s;background:#fff;color:var(--accent)}
+    .lang-switch button.active{background:var(--accent);color:#fff}
+    .container{max-width:820px;margin:32px auto;padding:0 20px 60px}
+    .card{background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.08);padding:32px;margin-bottom:24px}
+    h2{font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--light)}
+    p,li{font-size:.95rem;color:var(--muted);margin-bottom:8px}
+    ul{padding-left:20px}
+    li{margin-bottom:6px}
+    .badge{display:inline-block;background:var(--light);color:var(--primary);font-size:.8rem;padding:3px 10px;border-radius:10px;font-weight:600;margin-bottom:14px}
+    .contact-box{background:var(--light);border-radius:8px;padding:16px 20px;margin-top:12px}
+    .contact-box a{color:var(--accent);text-decoration:none;font-weight:600}
+    footer{text-align:center;padding:24px;font-size:.82rem;color:var(--muted);border-top:1px solid #e0e0e0;margin-top:16px}
+    #ar{display:none;direction:rtl;text-align:right}
+    #ar.active{display:block}
   </style>
 </head>
 <body>
-
 <header>
-  <h1>🌿 SFF Dashboard</h1>
-  <p>سياسة الخصوصية &nbsp;|&nbsp; Privacy Policy</p>
+  <h1>SFF Factory Management System</h1>
+  <p>Privacy Policy &nbsp;·&nbsp; سياسة الخصوصية</p>
 </header>
-
-<div class="container">
-
-  <div class="lang-switch">
-    <a href="#" onclick="showAr()">العربية 🇦🇪</a>
-    <a href="#" onclick="showEn()">English 🇬🇧</a>
-  </div>
-
-  <!-- =================== ARABIC =================== -->
-  <div id="ar-content">
-
-    <p class="updated">آخر تحديث: يوليو 2026</p>
-
-    <div class="card">
-      <h2>مقدمة</h2>
-      <p>
-        مرحباً بك في تطبيق <strong>SFF Dashboard</strong>، المملوك والمشغَّل من قِبل
-        <strong>SFF Food Industries</strong>، الإمارات العربية المتحدة.
-      </p>
-      <p>
-        نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. توضح هذه السياسة
-        أنواع البيانات التي نجمعها، وكيفية استخدامها، وكيف نحميها.
-      </p>
-      <p>
-        باستخدامك للتطبيق، فإنك توافق على شروط سياسة الخصوصية هذه.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>البيانات التي نجمعها</h2>
-      <ul>
-        <li>
-          <strong>بيانات الموقع الجغرافي:</strong>
-          نجمع موقعك الجغرافي (GPS) لتتبّع مسارات مندوبي المبيعات وعرض مواقعهم
-          على الخريطة. يُجمَع الموقع أثناء استخدام التطبيق وفي الخلفية إذا مُنحت
-          الصلاحية.
-        </li>
-        <li>
-          <strong>بيانات الكاميرا والميكروفون:</strong>
-          نستخدم الكاميرا والميكروفون لإجراء مكالمات الفيديو والصوت بين أعضاء
-          الفريق داخل التطبيق.
-        </li>
-        <li>
-          <strong>بيانات الحساب:</strong>
-          الاسم، البريد الإلكتروني، رقم الهاتف، ودورك الوظيفي داخل الشركة.
-        </li>
-        <li>
-          <strong>بيانات استخدام التطبيق:</strong>
-          معلومات تقنية مثل نوع الجهاز، نظام التشغيل، وسجلات الأخطاء
-          لتحسين أداء التطبيق.
-        </li>
-        <li>
-          <strong>بيانات المبيعات والمخزون:</strong>
-          بيانات الفواتير والطلبات والمخزون المُدخَلة من قِبلك أثناء عملك.
-        </li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>كيف نستخدم بياناتك</h2>
-      <ul>
-        <li>إتاحة وظائف التطبيق الأساسية (إدارة المبيعات، المخزون، الإنتاج).</li>
-        <li>تتبّع مسارات مندوبي المبيعات الميدانيين.</li>
-        <li>إجراء مكالمات الفيديو والصوت بين أعضاء الفريق.</li>
-        <li>إرسال الإشعارات المتعلقة بالطلبات والتنبيهات التشغيلية.</li>
-        <li>تحسين أداء التطبيق وإصلاح الأخطاء التقنية.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>مشاركة البيانات مع أطراف ثالثة</h2>
-      <p>
-        لا نبيع بياناتك ولا نشاركها مع أي طرف خارجي لأغراض تجارية.
-        نستخدم الخدمات التالية لتشغيل التطبيق:
-      </p>
-      <ul>
-        <li>
-          <span class="badge">Supabase</span>
-          لتخزين البيانات بشكل آمن على خوادم مشفّرة.
-        </li>
-        <li>
-          <span class="badge">WebRTC</span>
-          لإجراء مكالمات الفيديو والصوت المباشرة بين المستخدمين.
-        </li>
-      </ul>
-      <p>
-        قد نُفصح عن البيانات إذا اقتضى القانون ذلك أو بأمر من جهة قضائية مختصة.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>تخزين البيانات وحمايتها</h2>
-      <ul>
-        <li>تُخزَّن البيانات على خوادم Supabase بتشفير TLS أثناء النقل.</li>
-        <li>يُقيَّد الوصول إلى البيانات على موظفي الشركة المخوَّلين فقط.</li>
-        <li>يمكنك طلب حذف بياناتك في أي وقت عبر التواصل معنا.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>صلاحيات التطبيق على جهازك</h2>
-      <p>يطلب التطبيق الصلاحيات التالية وسبب كل منها:</p>
-      <ul>
-        <li><span class="badge">الموقع الجغرافي</span> — تتبّع مسار مندوبي المبيعات.</li>
-        <li><span class="badge">الكاميرا</span> — مكالمات الفيديو.</li>
-        <li><span class="badge">الميكروفون</span> — مكالمات الصوت والفيديو.</li>
-        <li><span class="badge">الإشعارات</span> — تنبيهات الطلبات والمهام.</li>
-        <li><span class="badge">الموقع في الخلفية</span> — تتبّع المسار أثناء إغلاق التطبيق.</li>
-        <li><span class="badge">الإنترنت</span> — الاتصال بالخادم وتحديث البيانات.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>حقوق المستخدم</h2>
-      <ul>
-        <li>الحق في الاطلاع على بياناتك الشخصية المخزَّنة.</li>
-        <li>الحق في تصحيح أي بيانات غير دقيقة.</li>
-        <li>الحق في طلب حذف حسابك وبياناتك كاملاً.</li>
-        <li>الحق في سحب موافقتك على أي صلاحية في أي وقت من إعدادات الجهاز.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>الأطفال</h2>
-      <p>
-        هذا التطبيق مخصص للاستخدام المهني ومُوجَّه للبالغين (18 عاماً فأكثر).
-        لا نجمع بيانات الأطفال دون سن 18 عن قصد.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>تغييرات على هذه السياسة</h2>
-      <p>
-        قد نُحدِّث هذه السياسة من وقت لآخر. سنُخطرك بأي تغييرات جوهرية عبر
-        إشعار داخل التطبيق. يُرجى مراجعة هذه الصفحة بشكل دوري.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>تواصل معنا</h2>
-      <p>إذا كان لديك أي استفسار حول هذه السياسة، يمكنك التواصل معنا:</p>
-      <ul>
-        <li><strong>الشركة:</strong> SFF Food Industries</li>
-        <li><strong>الدولة:</strong> الإمارات العربية المتحدة</li>
-        <li><strong>البريد الإلكتروني:</strong> support@sff-dashboard.com</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- =================== ENGLISH =================== -->
-  <div id="en-content" class="en-section" dir="ltr">
-
-    <p class="updated" style="text-align:center">Last updated: July 2026</p>
-
-    <div class="card">
-      <h2>Introduction</h2>
-      <p>
-        Welcome to <strong>SFF Dashboard</strong>, owned and operated by
-        <strong>SFF Food Industries</strong>, United Arab Emirates.
-      </p>
-      <p>
-        We respect your privacy and are committed to protecting your personal data.
-        This policy explains what data we collect, how we use it, and how we protect it.
-      </p>
-      <p>By using the app, you agree to the terms of this Privacy Policy.</p>
-    </div>
-
-    <div class="card">
-      <h2>Data We Collect</h2>
-      <ul>
-        <li>
-          <strong>Location Data:</strong> We collect GPS location to track
-          field sales representative routes and display their positions on the map.
-          Location is collected while the app is in use and in the background if
-          permission is granted.
-        </li>
-        <li>
-          <strong>Camera &amp; Microphone:</strong> Used for video and voice calls
-          between team members within the app.
-        </li>
-        <li>
-          <strong>Account Data:</strong> Name, email, phone number, and your role
-          within the organization.
-        </li>
-        <li>
-          <strong>Usage Data:</strong> Device type, OS version, and error logs to
-          improve app performance.
-        </li>
-        <li>
-          <strong>Sales &amp; Inventory Data:</strong> Invoices, orders, and
-          inventory entries you input during your work.
-        </li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>How We Use Your Data</h2>
-      <ul>
-        <li>Providing core app functionality (sales, inventory, production management).</li>
-        <li>Tracking field sales representative routes.</li>
-        <li>Enabling video and voice calls between team members.</li>
-        <li>Sending notifications related to orders and operational alerts.</li>
-        <li>Improving app performance and fixing technical issues.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Third-Party Data Sharing</h2>
-      <p>We do not sell or share your data with external parties for commercial purposes.
-      We use the following services to operate the app:</p>
-      <ul>
-        <li><span class="badge">Supabase</span> — Secure encrypted data storage.</li>
-        <li><span class="badge">WebRTC</span> — Direct peer video/voice calls.</li>
-      </ul>
-      <p>We may disclose data if required by law or court order.</p>
-    </div>
-
-    <div class="card">
-      <h2>Data Storage &amp; Security</h2>
-      <ul>
-        <li>Data is stored on Supabase servers with TLS encryption in transit.</li>
-        <li>Access is restricted to authorized company personnel only.</li>
-        <li>You may request deletion of your data at any time by contacting us.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>App Permissions</h2>
-      <ul>
-        <li><span class="badge">Location</span> — Track sales rep routes.</li>
-        <li><span class="badge">Camera</span> — Video calls.</li>
-        <li><span class="badge">Microphone</span> — Voice and video calls.</li>
-        <li><span class="badge">Notifications</span> — Order and task alerts.</li>
-        <li><span class="badge">Background Location</span> — Route tracking when app is minimized.</li>
-        <li><span class="badge">Internet</span> — Server connectivity and data sync.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Your Rights</h2>
-      <ul>
-        <li>Right to access your stored personal data.</li>
-        <li>Right to correct any inaccurate data.</li>
-        <li>Right to request deletion of your account and all data.</li>
-        <li>Right to withdraw consent for any permission at any time via device settings.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Children</h2>
-      <p>
-        This app is intended for professional use by adults (18+).
-        We do not knowingly collect data from children under 18.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Changes to This Policy</h2>
-      <p>
-        We may update this policy periodically. We will notify you of any material
-        changes via an in-app notification. Please review this page regularly.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Contact Us</h2>
-      <ul>
-        <li><strong>Company:</strong> SFF Food Industries</li>
-        <li><strong>Country:</strong> United Arab Emirates</li>
-        <li><strong>Email:</strong> support@sff-dashboard.com</li>
-      </ul>
-    </div>
-
-  </div>
-
+<div class="lang-switch">
+  <button class="active" onclick="setLang('en')">English</button>
+  <button onclick="setLang('ar')">العربية</button>
 </div>
 
-<footer>
-  &copy; 2026 SFF Food Industries — All rights reserved.
-</footer>
+<!-- ENGLISH -->
+<div class="container" id="en">
+  <div class="card"><span class="badge">Last updated: July 10, 2026</span>
+    <p>SFF Factory Management System is operated by <strong>Ayoub Apps</strong> for <strong>SFF Food Industries LLC</strong>. This policy explains how we collect, use, and protect your information.</p>
+  </div>
+  <div class="card"><h2>1. Information We Collect</h2>
+    <ul><li>Business data: invoices, inventory, production orders, and purchase records you enter.</li>
+    <li>Employee data: names, salaries, and leave requests entered by authorized HR users.</li>
+    <li>Login credentials: username and password for system access.</li>
+    <li>Device info: basic device data for offline sync only.</li></ul>
+  </div>
+  <div class="card"><h2>2. How We Use Your Information</h2>
+    <ul><li>To operate all factory management features of the App.</li>
+    <li>To sync data with the Supabase cloud database.</li>
+    <li>To generate financial reports, inventory summaries, and production statistics.</li>
+    <li>To support offline mode and data recovery.</li></ul>
+    <p style="margin-top:10px">We do <strong>not</strong> sell, rent, or share your data with third parties for marketing or advertising.</p>
+  </div>
+  <div class="card"><h2>3. Data Storage & Security</h2>
+    <ul><li>Cloud data is stored on <strong>Supabase</strong> servers with row-level security (RLS).</li>
+    <li>Local offline data is stored encrypted on your Windows device.</li>
+    <li>Access is protected by role-based authentication.</li>
+    <li>Service credentials are stored locally and never transmitted in plain text.</li></ul>
+  </div>
+  <div class="card"><h2>4. Data Sharing</h2>
+    <p>Your data is accessible only to authorized users within your organization. We use <strong>Supabase</strong> solely to operate the App. No data is shared with advertising or analytics platforms.</p>
+  </div>
+  <div class="card"><h2>5. Data Retention</h2>
+    <p>Business data is retained as long as your organization uses the App. You may request deletion at any time by contacting us.</p>
+  </div>
+  <div class="card"><h2>6. Children's Privacy</h2>
+    <p>This App is for business use only and is not intended for users under 18. We do not knowingly collect data from minors.</p>
+  </div>
+  <div class="card"><h2>7. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Changes will appear on this page with an updated date. Continued use of the App constitutes acceptance.</p>
+  </div>
+  <div class="card"><h2>8. Contact Us</h2>
+    <div class="contact-box">
+      <p><strong>Ayoub Apps</strong> — Developer of SFF Factory Management System</p>
+      <p>Email: <a href="mailto:ayoub19631@gmail.com">ayoub19631@gmail.com</a></p>
+      <p>For: SFF Food Industries LLC, Dubai, UAE</p>
+    </div>
+  </div>
+</div>
 
+<!-- ARABIC -->
+<div class="container" id="ar">
+  <div class="card"><span class="badge">آخر تحديث: 10 يوليو 2026</span>
+    <p>يُشغّل تطبيق <strong>نظام إدارة المصنع من SFF</strong> شركةُ <strong>Ayoub Apps</strong> لصالح شركة <strong>SFF Food Industries LLC</strong>. توضّح هذه السياسة كيفية جمع المعلومات واستخدامها وحمايتها.</p>
+  </div>
+  <div class="card"><h2>١. المعلومات التي نجمعها</h2>
+    <ul><li>بيانات الأعمال: الفواتير والمخزون وأوامر الإنتاج وسجلات المشتريات التي تُدخلها.</li>
+    <li>بيانات الموظفين: الأسماء والرواتب وطلبات الإجازات التي يُدخلها مستخدمو الموارد البشرية.</li>
+    <li>بيانات الوصول: اسم المستخدم وكلمة المرور.</li>
+    <li>معلومات الجهاز: بيانات أساسية لأغراض المزامنة فقط.</li></ul>
+  </div>
+  <div class="card"><h2>٢. كيف نستخدم معلوماتك</h2>
+    <ul><li>تشغيل ميزات إدارة المصنع في التطبيق.</li>
+    <li>مزامنة البيانات مع قاعدة بيانات Supabase السحابية.</li>
+    <li>إنشاء التقارير المالية وملخصات المخزون وإحصاءات الإنتاج.</li>
+    <li>دعم وضع العمل دون اتصال واسترداد البيانات.</li></ul>
+    <p style="margin-top:10px">نحن <strong>لا نبيع</strong> بياناتك ولا نشاركها مع أي طرف ثالث لأغراض تسويقية.</p>
+  </div>
+  <div class="card"><h2>٣. تخزين البيانات وأمانها</h2>
+    <ul><li>تُخزَّن البيانات السحابية على خوادم <strong>Supabase</strong> مع سياسات أمان صارمة (RLS).</li>
+    <li>البيانات المحلية مشفّرة على جهازك.</li>
+    <li>الوصول محمي بمصادقة قائمة على الأدوار.</li>
+    <li>مفاتيح الخدمة محفوظة محلياً ولا تُرسَل بنص عادي.</li></ul>
+  </div>
+  <div class="card"><h2>٤. مشاركة البيانات</h2>
+    <p>بياناتك متاحة فقط للمستخدمين المعتمدين في مؤسستك. نستخدم <strong>Supabase</strong> فقط لتشغيل التطبيق. لا تُشارك أي بيانات مع شبكات الإعلانات أو التحليل.</p>
+  </div>
+  <div class="card"><h2>٥. الاحتفاظ بالبيانات</h2>
+    <p>تُحتفظ بالبيانات طالما تستخدم مؤسستك التطبيق. يمكنك طلب الحذف في أي وقت.</p>
+  </div>
+  <div class="card"><h2>٦. خصوصية الأطفال</h2>
+    <p>هذا التطبيق للاستخدام التجاري فقط وليس موجهاً لمن هم دون سن 18 عاماً.</p>
+  </div>
+  <div class="card"><h2>٧. تغييرات على هذه السياسة</h2>
+    <p>قد نحدّث هذه السياسة من وقت لآخر. ستنعكس التغييرات على هذه الصفحة. استمرار استخدام التطبيق يُعدّ قبولاً للسياسة الجديدة.</p>
+  </div>
+  <div class="card"><h2>٨. تواصل معنا</h2>
+    <div class="contact-box">
+      <p><strong>Ayoub Apps</strong> — مطوّر نظام إدارة المصنع من SFF</p>
+      <p>البريد الإلكتروني: <a href="mailto:ayoub19631@gmail.com">ayoub19631@gmail.com</a></p>
+      <p>لصالح: شركة SFF Food Industries LLC، دبي، الإمارات</p>
+    </div>
+  </div>
+</div>
+
+<footer>© 2026 Ayoub Apps · SFF Food Industries LLC · All rights reserved</footer>
 <script>
-  function showAr() {
-    document.getElementById('ar-content').style.display = 'block';
-    document.getElementById('en-content').style.display = 'none';
-    document.documentElement.setAttribute('dir', 'rtl');
-    document.documentElement.setAttribute('lang', 'ar');
-  }
-  function showEn() {
-    document.getElementById('ar-content').style.display = 'none';
-    document.getElementById('en-content').style.display = 'block';
-    document.documentElement.setAttribute('dir', 'ltr');
-    document.documentElement.setAttribute('lang', 'en');
-  }
+function setLang(l){
+  document.getElementById('en').style.display=l==='en'?'block':'none';
+  var ar=document.getElementById('ar');
+  ar.style.display=l==='ar'?'block':'none';
+  ar.classList.toggle('active',l==='ar');
+  document.querySelectorAll('.lang-switch button').forEach(function(b,i){b.classList.toggle('active',(i===0&&l==='en')||(i===1&&l==='ar'))});
+  document.documentElement.setAttribute('dir',l==='ar'?'rtl':'ltr');
+}
+document.getElementById('en').style.display='block';
 </script>
-
 </body>
 </html>
